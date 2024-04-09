@@ -49,6 +49,7 @@ const Createuser = async (req, res) => {
     try{
 
         const newUser = new User({
+            // gen form
             FirstName: req.body.FirstName,
             LastName: req.body.LastName,
             Address: req.body.Address,
@@ -71,6 +72,9 @@ const Createuser = async (req, res) => {
             SocailClass: req.body.SocailClass,
             AgeGroup: req.body.AgeGroup,
             MFI: req.body.MFI,
+
+
+            //  ed form
             Qualification: req.body.Qualification,
             OtherQualification: req.body.OtherQualification,
             Stream: req.body.Stream,
@@ -110,13 +114,98 @@ const Createuser = async (req, res) => {
             OtherKeySkills: req.body.OtherKeySkills,
             JobImp: req.body.JobImp,
             OtherJobImp: req.body.OtherJobImp,
-            RateAva: req.body.RateAva
+            RateAva: req.body.RateAva,
+
+
+            //  aspi form
+            DreamCareer: req.body.DreamCareer || "",
+            OtherDreamCareer: req.body.OtherDreamCareer || "",
+            DreamCareerField: req.body.DreamCareerField || "",
+            OtherDreamCareerField: req.body.OtherDreamCareerField || "",
+            InfluenceFactor: req.body.InfluenceFactor || "",
+            OtherInfluenceFactor: req.body.OtherInfluenceFactor || "",
+            Scale: req.body.Scale || "",
+            GovSupport: req.body.GovSupport || "",
+            GovScheme: req.body.GovScheme || "",
+            FormalTrainEdu: req.body.FormalTrainEdu || "",
+            EduTrainProg: req.body.EduTrainProg || "",
+            ClgUniDegreeProg: req.body.ClgUniDegreeProg || "",
+            UnderGradCourseProg: req.body.UnderGradCourseProg || "",
+            OtherUnderGradCourseProg: req.body.OtherUnderGradCourseProg || "",
+            UnderGradFieldProg: req.body.UnderGradFieldProg || "",
+            OtherUnderGradFieldProg: req.body.OtherUnderGradFieldProg || "",
+            UnderGradBranchProg: req.body.UnderGradBranchProg || "",
+            OtherUnderGradBranchProg: req.body.OtherUnderGradBranchProg || "",
+            PGCourseProg: req.body.PGCourseProg || "",
+            OtherPGCourseProg: req.body.OtherPGCourseProg || "",
+            PGFieldProg: req.body.PGFieldProg || "",
+            OtherPGFieldProg: req.body.OtherPGFieldProg || "",
+            PGBranchProg: req.body.PGBranchProg || "",
+            OtherPGBranchProg: req.body.OtherPGBranchProg || "",
+            OtherClgUniDegreeProg: req.body.OtherClgUniDegreeProg || "",
+            VocTechProg: req.body.VocTechProg || "",
+            VTPCourseByIti: req.body.VTPCourseByIti || "",
+            OtherVTPCourseByIti: req.body.OtherVTPCourseByIti || "",
+            VTPCourseByPoly: req.body.VTPCourseByPoly || "",
+            OtherVTPCourseByPoly: req.body.OtherVTPCourseByPoly || "",
+            OtherVocTechProg: req.body.OtherVocTechProg || "",
+            OCCProg: req.body.OCCProg || "",
+            OCCUnderGradCourseProg: req.body.OCCUnderGradCourseProg || "",
+            OtherOCCUnderGradCourseProg: req.body.OtherOCCUnderGradCourseProg || "",
+            OCCUnderGradFieldProg: req.body.OCCUnderGradFieldProg || "",
+            OtherOCCUnderGradFieldProg: req.body.OtherOCCUnderGradFieldProg || "",
+            OCCUnderGradBranchProg: req.body.OCCUnderGradBranchProg || "",
+            OtherOCCUnderGradBranchProg: req.body.OtherOCCUnderGradBranchProg || "",
+            OCCPGCourseProg: req.body.OCCPGCourseProg || "",
+            OtherOCCPGCourseProg: req.body.OtherOCCPGCourseProg || "",
+            OCCPGFieldProg: req.body.OCCPGFieldProg || "",
+            OtherOCCPGFieldProg: req.body.OtherOCCPGFieldProg || "",
+            OCCPGBranchProg: req.body.OCCPGBranchProg || "",
+            OtherOCCPGBranchProg: req.body.OtherOCCPGBranchProg || "",
+            OtherOCCProg: req.body.OtherOCCProg || "",
+            AppProg: req.body.AppProg || "",
+            OtherAppProg: req.body.OtherAppProg || "",
+            EnterpreProg: req.body.EnterpreProg || "",
+            OtherEduTrainProg: req.body.OtherEduTrainProg || "",
+            FurEduTrain: req.body.FurEduTrain || "",
+        
+        
+            // support form
+            BigChal: req.body.BigChal || "",
+            OtherBigChal: req.body.OtherBigChal || "",
+            SOR: req.body.SOR || "",
+            Sector: req.body.Sector || "",
+            OtherSector: req.body.OtherSector || "",
+            SectorEnterp: req.body.SectorEnterp || "",
+            OtherSectorEnterp: req.body.OtherSectorEnterp || "",
+            MinMonthlyIncome: req.body.MinMonthlyIncome || "",
+            SST: req.body.SST || "",
+            OtherSST: req.body.OtherSST || "",
+            Chal: req.body.Chal || "",
+            OtherChal: req.body.OtherChal || "",
+
+
+
+            //  mig form
+            WTE: req.body.WTE || "",
+            WillJobOpp: req.body.WillJobOpp || "",
+            WillMigHome: req.body.WillMigHome || "",
+            NotWillMig: req.body.NotWillMig || "",
+            OutDisWUT: req.body.OutDisWUT || "",
+            WillDis: req.body.WillDis || "",
+            DisWillToMig: req.body.DisWillToMig || "",
+            WillMigOutUT: req.body.WillMigOutUT || "",
+            CityToMig: req.body.CityToMig || "",
+            ReasonCityToMig: req.body.ReasonCityToMig || "",
+            WillMigOutInd: req.body.WillMigOutInd || "",
+            CountryToMig: req.body.CountryToMig || "",
+            ReasonCountryToMig: req.body.ReasonCountryToMig || "",
+            ReasonNotWillOutInd: req.body.ReasonNotWillOutInd || ""
+
         });
         
         // const newUser = new User()
-        // console.log("newuser: ", newUser);
-        // console.log("newuser: ", newUser);
-        
+
         const user = await newUser.save();
         // console.log("user: ", user);
         res.status(200).json(user);

@@ -264,6 +264,337 @@ const UserSchema = new mongoose.Schema({
 
 
 
+
+
+    //  aspi form
+    DreamCareer:{
+        type: String,
+        default: ""
+    },
+    OtherDreamCareer:{
+        type: String,
+        default: ""
+    },
+    DreamCareerField:{
+        type: String,
+        default: ""
+    },
+    OtherDreamCareerField:{
+        type: String,
+        default: ""
+    },
+    InfluenceFactor:{
+        type: String,
+        default: ""
+    },
+    OtherInfluenceFactor:{
+        type: String,
+        default: ""
+    },
+    Scale:{
+        type: String,
+        default: ""
+    },
+    GovSupport:{
+        type: String,
+        default: ""
+    },
+    GovScheme:{
+        type: String,
+        default: ""
+    },
+    FormalTrainEdu:{
+        type: String,
+        default: ""
+    },
+    EduTrainProg:{
+        type: String,
+        default: ""
+    },
+    ClgUniDegreeProg:{
+        type: String,
+        default: ""
+    },
+    UnderGradCourseProg:{
+        type: String,
+        default: ""
+    },
+    OtherUnderGradCourseProg:{
+        type: String,
+        default: ""
+    },
+    UnderGradFieldProg:{
+        type: String,
+        default: ""
+    },
+    OtherUnderGradFieldProg:{
+        type: String,
+        default: ""
+    },
+    UnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    PGCourseProg:{
+        type: String,
+        default: ""
+    },
+    OtherPGCourseProg:{
+        type: String,
+        default: ""
+    },
+    PGFieldProg:{
+        type: String,
+        default: ""
+    },
+    OtherPGFieldProg:{
+        type: String,
+        default: ""
+    },
+    PGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherClgUniDegreeProg:{
+        type: String,
+        default: ""
+    },
+    VocTechProg:{
+        type: String,
+        default: ""
+    },
+    VTPCourseByIti:{
+        type: String,
+        default: ""
+    },
+    OtherVTPCourseByIti:{
+        type: String,
+        default: ""
+    },
+    VTPCourseByPoly:{
+        type: String,
+        default: ""
+    },
+    OtherVTPCourseByPoly:{
+        type: String,
+        default: ""
+    },
+    OtherVocTechProg:{
+        type: String,
+        default: ""
+    },
+    OCCProg:{
+        type: String,
+        default: ""
+    },
+    OCCUnderGradCourseProg:{
+        type: String,
+        default: ""
+    },
+    OtherOCCUnderGradCourseProg:{
+        type: String,
+        default: ""
+    },
+    OCCUnderGradFieldProg:{
+        type: String,
+        default: ""
+    },
+    OtherOCCUnderGradFieldProg:{
+        type: String,
+        default: ""
+    },
+    OCCUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherOCCUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    OCCUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherOCCUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    OCCPGCourseProg:{
+        type: String,
+        default: ""
+    },
+    OtherOCCPGCourseProg:{
+        type: String,
+        default: ""
+    },
+    OCCPGFieldProg:{
+        type: String,
+        default: ""
+    },
+    OtherOCCPGFieldProg:{
+        type: String,
+        default: ""
+    },
+    OCCPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherOCCPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OCCPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherOCCPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherOCCProg:{
+        type: String,
+        default: ""
+    },
+    AppProg:{
+        type: String,
+        default: ""
+    },
+    OtherAppProg:{
+        type: String,
+        default: ""
+    },
+    EnterpreProg:{
+        type: String,
+        default: ""
+    },
+    OtherEduTrainProg:{
+        type: String,
+        default: ""
+    },
+    FurEduTrain:{
+        type: String,
+        default: ""
+    },
+
+
+
+    // support form
+    BigChal:{
+        type: String,
+        default: ""
+    },
+    OtherBigChal:{
+        type: String,
+        default: ""
+    },
+    SOR:{
+        type: String,
+        default: ""
+    },
+    Sector:{
+        type: String,
+        default: ""
+    },
+    OtherSector:{
+        type: String,
+        default: ""
+    },
+    SectorEnterp:{
+        type: String,
+        default: ""
+    },
+    OtherSectorEnterp:{
+        type: String,
+        default: ""
+    },
+    MinMonthlyIncome:{
+        type: String,
+        default: ""
+    },
+    SST:{
+        type: String,
+        default: ""
+    },
+    OtherSST:{
+        type: String,
+        default: ""
+    },
+    Chal:{
+        type: String,
+        default: ""
+    },
+    OtherChal:{
+        type: String,
+        default: ""
+    },
+
+
+    //  mig form
+    WTE:{
+        type: String,
+        default: ""
+    },
+    WillJobOpp:{
+        type: String,
+        default: ""
+    },
+    WillMigHome:{
+        type: String,
+        default: ""
+    },
+    NotWillMig:{
+        type: String,
+        default: ""
+    },
+    OutDisWUT:{
+        type: String,
+        default: ""
+    },
+    WillDis:{
+        type: String,
+        default: ""
+    },
+    DisWillToMig:{
+        type: String,
+        default: ""
+    },
+    WillMigOutUT:{
+        type: String,
+        default: ""
+    },
+    CityToMig:{
+        type: String,
+        default: ""
+    },
+    ReasonCityToMig:{
+        type: String,
+        default: ""
+    },
+    WillMigOutInd:{
+        type: String,
+        default: ""
+    },
+    CountryToMig:{
+        type: String,
+        default: ""
+    },
+    ReasonCountryToMig:{
+        type: String,
+        default: ""
+    },
+    ReasonNotWillOutInd:{
+        type: String,
+        default: ""
+    },
+    
     role:{
         type: String,
         default: "user"
