@@ -114,7 +114,7 @@ const Createuser = async (req, res) => {
         });
         
         // const newUser = new User()
-        console.log("newuser: ", newUser);
+        // console.log("newuser: ", newUser);
         // console.log("newuser: ", newUser);
         
         const user = await newUser.save();
