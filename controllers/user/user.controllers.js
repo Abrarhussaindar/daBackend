@@ -127,7 +127,10 @@ const Createuser = async (req, res) => {
             Scale: req.body.Scale || "",
             GovSupport: req.body.GovSupport || "",
             GovScheme: req.body.GovScheme || "",
+
+
             FormalTrainEdu: req.body.FormalTrainEdu || "",
+
             EduTrainProg: req.body.EduTrainProg || "",
             ClgUniDegreeProg: req.body.ClgUniDegreeProg || "",
             UnderGradCourseProg: req.body.UnderGradCourseProg || "",
@@ -168,6 +171,50 @@ const Createuser = async (req, res) => {
             EnterpreProg: req.body.EnterpreProg || "",
             OtherEduTrainProg: req.body.OtherEduTrainProg || "",
             FurEduTrain: req.body.FurEduTrain || "",
+
+
+
+
+            FTEduTrainProg: req.body.FTEduTrainProg || "",
+            FTClgUniDegreeProg: req.body.FTClgUniDegreeProg || "",
+            FTUnderGradCourseProg: req.body.FTUnderGradCourseProg || "",
+            OtherFTUnderGradCourseProg: req.body.OtherFTUnderGradCourseProg || "",
+            FTUnderGradFieldProg: req.body.FTUnderGradFieldProg || "",
+            OtherFTUnderGradFieldProg: req.body.OtherFTUnderGradFieldProg || "",
+            FTUnderGradBranchProg: req.body.FTUnderGradBranchProg || "",
+            OtherFTUnderGradBranchProg: req.body.OtherFTUnderGradBranchProg || "",
+            FTPGCourseProg: req.body.FTPGCourseProg || "",
+            OtherFTPGCourseProg: req.body.OtherFTPGCourseProg || "",
+            FTPGFieldProg: req.body.FTPGFieldProg || "",
+            OtherFTPGFieldProg: req.body.OtherFTPGFieldProg || "",
+            FTPGBranchProg: req.body.FTPGBranchProg || "",
+            OtherFTPGBranchProg: req.body.OtherFTPGBranchProg || "",
+            OtherFTClgUniDegreeProg: req.body.OtherFTClgUniDegreeProg || "",
+            FTVocTechProg: req.body.FTVocTechProg || "",
+            FTVTPCourseByIti: req.body.FTVTPCourseByIti || "",
+            OtherFTVTPCourseByIti: req.body.OtherFTVTPCourseByIti || "",
+            FTVTPCourseByPoly: req.body.FTVTPCourseByPoly || "",
+            OtherFTVTPCourseByPoly: req.body.OtherFTVTPCourseByPoly || "",
+            OtherFTVocTechProg: req.body.OtherFTVocTechProg || "",
+            FTOCCProg: req.body.FTOCCProg || "",
+            FTOCCUnderGradCourseProg: req.body.FTOCCUnderGradCourseProg || "",
+            OtherFTOCCUnderGradCourseProg: req.body.OtherFTOCCUnderGradCourseProg || "",
+            FTOCCUnderGradFieldProg: req.body.FTOCCUnderGradFieldProg || "",
+            OtherFTOCCUnderGradFieldProg: req.body.OtherFTOCCUnderGradFieldProg || "",
+            FTOCCUnderGradBranchProg: req.body.FTOCCUnderGradBranchProg || "",
+            OtherFTOCCUnderGradBranchProg: req.body.OtherFTOCCUnderGradBranchProg || "",
+            FTOCCPGCourseProg: req.body.FTOCCPGCourseProg || "",
+            OtherFTOCCPGCourseProg: req.body.OtherFTOCCPGCourseProg || "",
+            FTOCCPGFieldProg: req.body.FTOCCPGFieldProg || "",
+            OtherFTOCCPGFieldProg: req.body.OtherFTOCCPGFieldProg || "",
+            FTOCCPGBranchProg: req.body.FTOCCPGBranchProg || "",
+            OtherFTOCCPGBranchProg: req.body.OtherFTOCCPGBranchProg || "",
+            FTOtherOCCProg: req.body.OtherFTOCCProg || "",
+            FTAppProg: req.body.FTAppProg || "",
+            OtherFTAppProg: req.body.OtherFTAppProg || "",
+            FTEnterpreProg: req.body.FTEnterpreProg || "",
+            OtherFTEduTrainProg: req.body.OtherFTEduTrainProg || "",
+            
         
         
             // support form
@@ -194,6 +241,7 @@ const Createuser = async (req, res) => {
             OutDisWUT: req.body.OutDisWUT || "",
             WillDis: req.body.WillDis || "",
             DisWillToMig: req.body.DisWillToMig || "",
+            ReasonDisToMig: req.body.ReasonDisToMig || "",
             WillMigOutUT: req.body.WillMigOutUT || "",
             CityToMig: req.body.CityToMig || "",
             ReasonCityToMig: req.body.ReasonCityToMig || "",

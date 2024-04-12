@@ -484,6 +484,178 @@ const UserSchema = new mongoose.Schema({
         default: ""
     },
 
+    FTEduTrainProg:{
+        type: String,
+        default: ""
+    },
+    FTClgUniDegreeProg:{
+        type: String,
+        default: ""
+    },
+    FTUnderGradCourseProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTUnderGradCourseProg:{
+        type: String,
+        default: ""
+    },
+    FTUnderGradFieldProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTUnderGradFieldProg:{
+        type: String,
+        default: ""
+    },
+    FTUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    FTPGCourseProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTPGCourseProg:{
+        type: String,
+        default: ""
+    },
+    FTPGFieldProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTPGFieldProg:{
+        type: String,
+        default: ""
+    },
+    FTPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTClgUniDegreeProg:{
+        type: String,
+        default: ""
+    },
+    FTVocTechProg:{
+        type: String,
+        default: ""
+    },
+    FTVTPCourseByIti:{
+        type: String,
+        default: ""
+    },
+    OtherFTVTPCourseByIti:{
+        type: String,
+        default: ""
+    },
+    FTVTPCourseByPoly:{
+        type: String,
+        default: ""
+    },
+    OtherFTVTPCourseByPoly:{
+        type: String,
+        default: ""
+    },
+    OtherFTVocTechProg:{
+        type: String,
+        default: ""
+    },
+    FTOCCProg:{
+        type: String,
+        default: ""
+    },
+    FTOCCUnderGradCourseProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTOCCUnderGradCourseProg:{
+        type: String,
+        default: ""
+    },
+    FTOCCUnderGradFieldProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTOCCUnderGradFieldProg:{
+        type: String,
+        default: ""
+    },
+    FTOCCUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTOCCUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    FTOCCUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTOCCUnderGradBranchProg:{
+        type: String,
+        default: ""
+    },
+    FTOCCPGCourseProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTOCCPGCourseProg:{
+        type: String,
+        default: ""
+    },
+    FTOCCPGFieldProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTOCCPGFieldProg:{
+        type: String,
+        default: ""
+    },
+    FTOCCPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTOCCPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    FTOCCPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTOCCPGBranchProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTOCCProg:{
+        type: String,
+        default: ""
+    },
+    FTAppProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTAppProg:{
+        type: String,
+        default: ""
+    },
+    FTEnterpreProg:{
+        type: String,
+        default: ""
+    },
+    OtherFTEduTrainProg:{
+        type: String,
+        default: ""
+    },
 
 
     // support form
@@ -575,6 +747,10 @@ const UserSchema = new mongoose.Schema({
         default: ""
     },
     ReasonCityToMig:{
+        type: String,
+        default: ""
+    },
+    ReasonDisToMig:{
         type: String,
         default: ""
     },
