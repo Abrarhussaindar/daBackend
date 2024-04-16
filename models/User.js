@@ -267,54 +267,31 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
-    UnderGradCourseProg:{
+    IntCourseProg:{
         type: String,
         default: ""
     },
-    OtherUnderGradCourseProg:{
+    OtherIntCourseProg:{
         type: String,
         default: ""
     },
-    UnderGradFieldProg:{
+    IntFieldProg:{
         type: String,
         default: ""
     },
-    OtherUnderGradFieldProg:{
+    OtherIntFieldProg:{
         type: String,
         default: ""
     },
-    UnderGradBranchProg:{
+    IntBranchProg:{
         type: String,
         default: ""
     },
-    OtherUnderGradBranchProg:{
+    OtherIntBranchProg:{
         type: String,
         default: ""
     },
-    PGCourseProg:{
-        type: String,
-        default: ""
-    },
-    OtherPGCourseProg:{
-        type: String,
-        default: ""
-    },
-    PGFieldProg:{
-        type: String,
-        default: ""
-    },
-    OtherPGFieldProg:{
-        type: String,
-        default: ""
-    },
-    PGBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherPGBranchProg:{
-        type: String,
-        default: ""
-    },
+    
     OtherClgUniDegreeProg:{
         type: String,
         default: ""
@@ -347,70 +324,6 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
-    OCCUnderGradCourseProg:{
-        type: String,
-        default: ""
-    },
-    OtherOCCUnderGradCourseProg:{
-        type: String,
-        default: ""
-    },
-    OCCUnderGradFieldProg:{
-        type: String,
-        default: ""
-    },
-    OtherOCCUnderGradFieldProg:{
-        type: String,
-        default: ""
-    },
-    OCCUnderGradBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherOCCUnderGradBranchProg:{
-        type: String,
-        default: ""
-    },
-    OCCUnderGradBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherOCCUnderGradBranchProg:{
-        type: String,
-        default: ""
-    },
-    OCCPGCourseProg:{
-        type: String,
-        default: ""
-    },
-    OtherOCCPGCourseProg:{
-        type: String,
-        default: ""
-    },
-    OCCPGFieldProg:{
-        type: String,
-        default: ""
-    },
-    OtherOCCPGFieldProg:{
-        type: String,
-        default: ""
-    },
-    OCCPGBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherOCCPGBranchProg:{
-        type: String,
-        default: ""
-    },
-    OCCPGBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherOCCPGBranchProg:{
-        type: String,
-        default: ""
-    },
     OtherOCCProg:{
         type: String,
         default: ""
@@ -436,6 +349,7 @@ const UserSchema = new mongoose.Schema({
         default: ""
     },
 
+
     FTEduTrainProg:{
         type: String,
         default: ""
@@ -444,54 +358,31 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
-    FTUnderGradCourseProg:{
+    FTCourseProg:{
         type: String,
         default: ""
     },
-    OtherFTUnderGradCourseProg:{
+    OtherFTCourseProg:{
         type: String,
         default: ""
     },
-    FTUnderGradFieldProg:{
+    FTFieldProg:{
         type: String,
         default: ""
     },
-    OtherFTUnderGradFieldProg:{
+    OtherFTFieldProg:{
         type: String,
         default: ""
     },
-    FTUnderGradBranchProg:{
+    FTBranchProg:{
         type: String,
         default: ""
     },
-    OtherFTUnderGradBranchProg:{
+    OtherFTBranchProg:{
         type: String,
         default: ""
     },
-    FTPGCourseProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTPGCourseProg:{
-        type: String,
-        default: ""
-    },
-    FTPGFieldProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTPGFieldProg:{
-        type: String,
-        default: ""
-    },
-    FTPGBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTPGBranchProg:{
-        type: String,
-        default: ""
-    },
+    
     OtherFTClgUniDegreeProg:{
         type: String,
         default: ""
@@ -524,70 +415,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
-    FTOCCUnderGradCourseProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTOCCUnderGradCourseProg:{
-        type: String,
-        default: ""
-    },
-    FTOCCUnderGradFieldProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTOCCUnderGradFieldProg:{
-        type: String,
-        default: ""
-    },
-    FTOCCUnderGradBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTOCCUnderGradBranchProg:{
-        type: String,
-        default: ""
-    },
-    FTOCCUnderGradBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTOCCUnderGradBranchProg:{
-        type: String,
-        default: ""
-    },
-    FTOCCPGCourseProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTOCCPGCourseProg:{
-        type: String,
-        default: ""
-    },
-    FTOCCPGFieldProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTOCCPGFieldProg:{
-        type: String,
-        default: ""
-    },
-    FTOCCPGBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTOCCPGBranchProg:{
-        type: String,
-        default: ""
-    },
-    FTOCCPGBranchProg:{
-        type: String,
-        default: ""
-    },
-    OtherFTOCCPGBranchProg:{
-        type: String,
-        default: ""
-    },
+    
     OtherFTOCCProg:{
         type: String,
         default: ""
