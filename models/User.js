@@ -125,75 +125,27 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
-    UnderGradCourse:{
+    Course:{
         type: String,
         default: ""
     },
-    OtherUnderGradCourse:{
+    OtherCourse:{
         type: String,
         default: ""
     },
-    UnderGradField:{
+    Field:{
         type: String,
         default: ""
     },
-    OtherUnderGradField:{
+    OtherField:{
         type: String,
         default: ""
     },
-    UnderGradBranch:{
+    Branch:{
         type: String,
         default: ""
     },
-    OtherUnderGradBranch:{
-        type: String,
-        default: ""
-    },
-    GradCourse:{
-        type: String,
-        default: ""
-    },
-    OtherGradCourse:{
-        type: String,
-        default: ""
-    },
-    GradField:{
-        type: String,
-        default: ""
-    },
-    OtherGradField:{
-        type: String,
-        default: ""
-    },
-    GradBranch:{
-        type: String,
-        default: ""
-    },
-    OtherGradBranch:{
-        type: String,
-        default: ""
-    },
-    PGCourse:{
-        type: String,
-        default: ""
-    },
-    OtherPGCourse:{
-        type: String,
-        default: ""
-    },
-    PGField:{
-        type: String,
-        default: ""
-    },
-    OtherPGField:{
-        type: String,
-        default: ""
-    },
-    PGBranch:{
-        type: String,
-        default: ""
-    },
-    OtherPGBranch:{
+    OtherBranch:{
         type: String,
         default: ""
     },
