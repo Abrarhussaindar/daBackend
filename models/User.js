@@ -194,8 +194,8 @@ const UserSchema = new mongoose.Schema({
         default: ""
     },
     KeySkills:{
-        type: String,
-        default: ""
+        type: [String],
+        default: []
     },
     OtherKeySkills:{
         type: String,

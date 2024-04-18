@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 
-const url = "mongodb+srv://abrardar988651:Abrardar123@freeserver.wc1ytkf.mongodb.net/"
+const url = "mongodb+srv://abrardar988651:Abrardar123@freeserver.wc1ytkf.mongodb.net/YouthAspiration"
 
 app.use("/api/user", userRoute);
 
