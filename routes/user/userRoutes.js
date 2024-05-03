@@ -12,6 +12,7 @@ const UserController = require('../../controllers/user/user.controllers');
 
 
 router.post("/create", UserController.Createuser);
+router.post("/createtradeuser", UserController.CreateTradeUser);
 
 router.get("/all", UserController.GetAllUsers);
 module.exports = router;

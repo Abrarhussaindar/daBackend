@@ -1,5 +1,6 @@
 const express = require('express');
 const User = require('../../models/User');
+const TradeUser = require('../../models/TradeUser');
 // const bcrypt = require('bcrypt');
 
 // user controllers
@@ -45,6 +46,71 @@ const User = require('../../models/User');
 //         res.status(500).json(err)
 //     }
 // }
+
+const CreateTradeUser = async (req, res) => {
+    try {
+        const newUser = new TradeUser({
+            OrganizationName: req.body.OrganizationName,
+            KeyPersonnel: req.body.KeyPersonnel,
+            Founder: req.body.Founder,
+            LegalStructure: req.body.LegalStructure,
+            Email: req.body.Email,
+            PhoneNumber: req.body.PhoneNumber,
+            IndustrySector: req.body.IndustrySector,
+            MembershipAffiliations: req.body.MembershipAffiliations,
+            questions: [
+                { questionName: "industySector", options: req.body.industySector },
+                { questionName: "regulatoryEnvironment", options: req.body.regulatoryEnvironment },
+                { questionName: "tradePoliciesImpact", options: req.body.tradePoliciesImpact },
+                { questionName: "governmentSupportSatisfaction", options: req.body.governmentSupportSatisfaction },
+                { questionName: "digitalTechnologyUtilization", options: req.body.digitalTechnologyUtilization },
+                { questionName: "futureGrowthConfidence", options: req.body.futureGrowthConfidence },
+                { questionName: "tradeExpansionBarriers", options: req.body.tradeExpansionBarriers },
+                { questionName: "networkingEffectiveness", options: req.body.networkingEffectiveness },
+                { questionName: "collaborationBenefit", options: req.body.collaborationBenefit },
+                { questionName: "skillGaps", options: req.body.skillGaps },
+                { questionName: "skillGapSolutions", options: req.body.skillGapSolutions },
+                { questionName: "skilledLaborChallenges", options: req.body.skilledLaborChallenges },
+                { questionName: "skilledLaborImpact", options: req.body.skilledLaborImpact },
+                { questionName: "foreignWorkerFactors", options: req.body.foreignWorkerFactors },
+                { questionName: "immigrationPoliciesSatisfaction", options: req.body.immigrationPoliciesSatisfaction },
+                { questionName: "salaryComparison", options: req.body.salaryComparison },
+                { questionName: "salaryTrends", options: req.body.salaryTrends },
+                { questionName: "salaryInfluence", options: req.body.salaryInfluence },
+                { questionName: "diversityImportance", options: req.body.diversityImportance },
+                { questionName: "automationImpact", options: req.body.automationImpact },
+                { questionName: "compensationPractices", options: req.body.compensationPractices },
+                { questionName: "retentionEffectiveness", options: req.body.retentionEffectiveness },
+                { questionName: "upskillingRole", options: req.body.upskillingRole },
+                { questionName: "remoteWorkImpact", options: req.body.remoteWorkImpact },
+                { questionName: "flexibleWorkArrangements", options: req.body.flexibleWorkArrangements },
+                { questionName: "diversityPromotion", options: req.body.diversityPromotion },
+                { questionName: "laborMigrationImpact", options: req.body.laborMigrationImpact },
+                { questionName: "genderPayEquity", options: req.body.genderPayEquity },
+                { questionName: "demographicShiftsImpact", options: req.body.demographicShiftsImpact },
+                { questionName: "skilledLaborAvailability", options: req.body.skilledLaborAvailability },
+                { questionName: "talentPoolQuality", options: req.body.talentPoolQuality },
+                { questionName: "localAttractivenessFactors", options: req.body.localAttractivenessFactors },
+                { questionName: "educationalEngagement", options: req.body.educationalEngagement },
+                { questionName: "loyaltyComparison", options: req.body.loyaltyComparison },
+                { questionName: "talentRetentionInitiatives", options: req.body.talentRetentionInitiatives },
+                { questionName: "localRecruitmentChallenges", options: req.body.localRecruitmentChallenges },
+                { questionName: "demographicTrendsImpact", options: req.body.demographicTrendsImpact },
+                { questionName: "communityPerceptionImpact", options: req.body.communityPerceptionImpact },
+                { questionName: "collaborationWithGovernment", options: req.body.collaborationWithGovernment }
+            ]
+        });
+        const user = await newUser.save();
+        res.status(200).json(user);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ error: 'Failed to create trade user.' });
+    }
+}
+
+module.exports = CreateTradeUser;
+
+
 const Createuser = async (req, res) => {
     try{
 
@@ -206,11 +272,9 @@ const Createuser = async (req, res) => {
             ReasonNotWillOutInd: req.body.ReasonNotWillOutInd || ""
 
         });
-        
-        // const newUser = new User()
+
 
         const user = await newUser.save();
-        // console.log("user: ", user);
         res.status(200).json(user);
     }catch(err){
         res.status(500).json(err);
@@ -227,4 +291,4 @@ const GetAllUsers = async (req, res) => {
     }
 }
 
-module.exports = { GetAllUsers, Createuser }
+module.exports = { GetAllUsers, Createuser, CreateTradeUser }
