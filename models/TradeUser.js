@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-// Define schema for the questions
 const tradeUserSchema = new mongoose.Schema({
     OrganizationName: {
         type: String,
@@ -42,6 +41,10 @@ const tradeUserSchema = new mongoose.Schema({
             },
             options: {
                 type: [String]
+            },
+            otherInput: {
+                type: String, // Store input for 'Other' option
+                default: ""
             }
         }
     ]
