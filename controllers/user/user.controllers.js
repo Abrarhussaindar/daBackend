@@ -48,6 +48,7 @@ const TradeUser = require('../../models/TradeUser');
 // }
 
 const CreateTradeUser = async (req, res) => {
+    console.log("req: ", req.body);
     try {
         const newUser = new TradeUser({
             OrganizationName: req.body.OrganizationName,
@@ -58,17 +59,46 @@ const CreateTradeUser = async (req, res) => {
             PhoneNumber: req.body.PhoneNumber,
             IndustrySector: req.body.IndustrySector,
             MembershipAffiliations: req.body.MembershipAffiliations,
-            questions: req.body.questions.map(question => {
-                // Check if the question has an "Other" option selected and retrieve its input
-                const otherInput = req.body[question.questionName + 'Other'] || "";
-                return {
-                    questionName: question.questionName,
-                    options: question.options,
-                    // Include otherInput field if it exists
-                    otherInput: otherInput
-                };
-            })
+            RegulatoryEnvironment: req.body.regulatoryEnvironment,
+            GovernmentSupportSatisfaction: req.body.governmentSupportSatisfaction,
+            TradePoliciesImpact: req.body.tradePoliciesImpact,
+            DigitalTechnologyUtilization: req.body.digitalTechnologyUtilization,
+            FutureGrowthConfidence: req.body.futureGrowthConfidence,
+            TradeExpansionBarriers: req.body.tradeExpansionBarriers,
+            NetworkingEffectiveness: req.body.networkingEffectiveness,
+            CollaborationBenefit: req.body.collaborationBenefit,
+            SkillGapSolutions: req.body.skillGapSolutions,
+            SkillGaps: req.body.skillGaps,
+            SkilledLaborChallenges: req.body.skilledLaborChallenges,
+            SkilledLaborImpact: req.body.skilledLaborImpact,
+            ForeignWorkerFactors: req.body.foreignWorkerFactors,
+            ImmigrationPoliciesSatisfaction: req.body.immigrationPoliciesSatisfaction,
+            SalaryComparison: req.body.salaryComparison,
+            SalaryTrends: req.body.salaryTrends,
+            SalaryInfluence: req.body.salaryInfluence,
+            DiversityImportance: req.body.diversityImportance,
+            AutomationImpact: req.body.automationImpact,
+            CompensationPractices: req.body.compensationPractices,
+            RetentionEffectiveness: req.body.retentionEffectiveness,
+            UpskillingRole: req.body.upskillingRole,
+            RemoteWorkImpact: req.body.remoteWorkImpact,
+            DiversityPromotion: req.body.diversityPromotion,
+            FlexibleWorkArrangements: req.body.flexibleWorkArrangements,
+            LaborMigrationImpact: req.body.laborMigrationImpact,
+            GenderPayEquity: req.body.genderPayEquity,
+            DemographicShiftsImpact: req.body.demographicShiftsImpact,
+            SkilledLaborAvailability: req.body.skilledLaborAvailability,
+            TalentPoolQuality: req.body.talentPoolQuality,
+            LocalAttractivenessFactors: req.body.localAttractivenessFactors,
+            TalentRetentionInitiatives: req.body.talentRetentionInitiatives,
+            EducationalEngagement: req.body.educationalEngagement,
+            LoyaltyComparison: req.body.loyaltyComparison,
+            LocalRecruitmentChallenges: req.body.localRecruitmentChallenges,
+            DemographicTrendsImpact: req.body.demographicTrendsImpact,
+            CommunityPerceptionImpact: req.body.communityPerceptionImpact,
+            CollaborationWithGovernment: req.body.collaborationWithGovernment
         });
+
         const user = await newUser.save();
         res.status(200).json(user);
     } catch (err) {
@@ -76,6 +106,8 @@ const CreateTradeUser = async (req, res) => {
         res.status(500).json({ error: 'Failed to create trade user.' });
     }
 }
+
+
 
 
 module.exports = CreateTradeUser;
